@@ -6,7 +6,7 @@ class UnicodeCharacterInputHandler(sublime_plugin.TextInputHandler):
         return "character"
 
     def placeholder(self):
-        return "Hexadecimal code point"
+        return "hexadecimal code point"
 
     def preview(self, expr):
         if expr != "":
@@ -15,7 +15,7 @@ class UnicodeCharacterInputHandler(sublime_plugin.TextInputHandler):
 
                 return actual_character
             except:
-                return "Invalid code point"
+                return "(invalid code point)"
 
 class UnicodeCharacterInputCommand(sublime_plugin.TextCommand):
     def run(self, edit, character):
