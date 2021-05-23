@@ -19,7 +19,6 @@ class UnicodeCharacterInputHandler(sublime_plugin.TextInputHandler):
 
 class UnicodeCharacterInputCommand(sublime_plugin.TextCommand):
     def run(self, edit, character):
-        print(character)
         for region in self.view.sel():
             actual_character = chr(int(character, 16))
             self.view.replace(edit, region, actual_character)
