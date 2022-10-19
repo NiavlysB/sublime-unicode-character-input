@@ -1,5 +1,7 @@
 # Unicode Character Input
 
+**ARCHIVED: Recent changes in GTK and/or iBus (?) seem to have brought the native Linux "Ctrl-Shift-U" behavior in ST4. Archiving this repository as a result (the plugin was never officially published).**
+
 Sublime Text plugin (ST3/4) for inserting any Unicode character,
 by entering its hexadecimal code.
 
